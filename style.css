@@ -1,0 +1,95 @@
+/* 3c1053ff
+df6589ff */
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    font-family: 'poppins', sans-serif;
+    background: #3c1053ff;
+    overflow: hidden;
+}
+.text
+{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text span
+{
+    font-size: 12rem;
+    letter-spacing: 20px;
+    font-weight: 900;
+    display: inline-block;
+    color: #df6589ff;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+.text span:nth-child(1)
+{
+    animation-name: left;
+}
+.text span:nth-child(2)
+{
+    animation-name: left;
+    animation-delay: .3s;
+}
+.text span:nth-child(3)
+{
+    animation-name: right;
+    animation-delay: .6s;
+}
+.text span:nth-child(4)
+{
+    animation-name: right;
+    animation-delay: .8s;
+}
+.text span:nth-child(5)
+{
+    animation-name: right;
+    animation-delay: 1s;
+}
+.text span:nth-child(6)
+{
+    animation-name: right;
+    animation-delay: 1.3s;
+}
+.text span:nth-child(7)
+{
+    animation-name: left;
+    animation-delay: 1.6s;
+}
+.text span:nth-child(8)
+{
+    animation-name: right;
+    animation-delay: 2s;
+}
+.text span:nth-child(9)
+{
+    animation-name: right;
+    animation-delay: 2.3s;
+}
+
+/* Animation */
+
+@keyframes left
+{
+    50%
+    {
+        transform: skew(50deg) translateY(-150%);
+        opacity: 0;
+    }
+}
+@keyframes right
+{
+    50%
+    {
+        transform: skew(-50deg) translateY(-150%);
+        opacity: 0;
+    }
+}
